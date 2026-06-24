@@ -12,6 +12,6 @@ Duplicating the existing Arrow and IBeam cursor dictionaries to those `*S` compa
 
 I put together a small local patch script that does this without redistributing any cursor artwork or patched cape files:
 
-<REPO URL HERE>
+https://github.com/Lancelaut/mousecape-macos26-cursor-alias-fix
 
 It only edits a cape file already present on the user's machine, creates a timestamped backup, and validates the result with `plutil` on macOS.
