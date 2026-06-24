@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.mousecape.autoreapply</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/sh</string>
+        <string>-lc</string>
+        <string>sleep 8; /usr/bin/open -gj -a /Applications/Mousecape.app; sleep 5; /usr/bin/osascript -e 'tell application "Mousecape" to quit' >/dev/null 2>&amp;1 || true</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/mousecape-autoreapply.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/mousecape-autoreapply.err.log</string>
+</dict>
+</plist>
