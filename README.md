@@ -94,6 +94,13 @@ Some systems lose the applied cursor after reboot/login. The `examples/` folder 
 
 This is intentionally provided as an example, not installed automatically.
 
+## Additional docs
+
+- [FAQ](FAQ.md)
+- [Changelog](CHANGELOG.md)
+- [Contributing](CONTRIBUTING.md)
+- [LaunchAgent example](examples/README.md)
+
 ## Safety and licensing notes
 
 - Do not publish patched `.cape` files that contain Apple cursor image data unless you have the right to distribute those assets.
